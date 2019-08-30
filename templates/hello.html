@@ -1,5 +1,7 @@
 <!doctype html>
 <title>Hello from Flask</title>
+
+<div id="main" style="text-align: center;">
 {% if name %}
   <h1>Hello {{ name }}!</h1>
 {% else %}
@@ -7,3 +9,5 @@
 {% endif %}
 
 <img src="{{ url_for('static', filename='python-powered.png') }}"/>
+</div>
+<div style="text-align: center;">{{ version }}</div>
